@@ -7,56 +7,65 @@
     <title>Document</title>
   </head>
   <body>
-   <div class="calendar__container">
-     <div class="calendar__container__nav1">
-       <h3 class="calendar__container__nav1__header">Dashboard</h3>
-       <div class="calendar__container__nav1__search">
-          <span class="icon-search"></span>
-          <input placeholder="Search here..">
+    <div class="zone1">
+        <div class="calendar-container">
+            <div class="nav-top">
+              <h3 class="nav-top__header">Dashboard</h3>
+              <div class="nav-top__search">
+                  <span class="icon-search"></span>
+                  <input placeholder="Search Here..">
+              </div>
+              <div class="nav-top__profile">
+                  <span class="icon-notification"></span>
+                  <img src="./assets/images/profile image.jpeg" alt="">
+                  <p id="name">Justin Mark</p>
+                  <span class="icon-dot-3"></span>
+              </div>
+            </div>
         </div>
-        <div class="calendar__container__nav1__profile">
-          <div class="calendar__container__nav1__profile__notification">
-              <span class="icon-bell-alt"></span>
-              <span class="icon-dot"></span>
-          </div>
-          <img src="./assets/images/profile image.jpeg" alt="">
-          <p>Justin Mark</p>
-          <span class="icon-dot-3"></span>
-        </div>
-     </div>
-     <div class="calendar__container__nav2">
-       <p id="dashboard"><span class="icon-th-thumb"></span>Dashboards</p>
-       <p id="management"><span class="icon-doc-text-inv"></span>Ads Management</p>
-       <p id="user"><span class="icon-user"></span>User Management</p>
-       <p id="pie-chart"><span class="icon-chart-pie"></span>Post Analytics</p>
-       <p id="calendar"><span class="icon-calendar-inv"></span>Calendar</p>
-       <p id="support"><span class="icon-comment-alt"></span>Support</p>
-       <p id="settings"><span class="icon-cog"></span>Settings</p>
-       <p id="earnings">Earning:<span>$5973.94</span></p>
-     </div>
-     <div class="calendar__container__calendar">
-       <div class="calendar__container__calendar__content">
-          <p>Calendar</p>
+    </div>
+    <div class="zone2">
+      <div class="calendar-container">
+          <div class="nav-bottom">
+              <p><span class="icon-dashboard"></span>Dashboard</p>
+              <p><span class="icon-doc-text-inv"></span>Ads Management</p>
+              <p><span class="icon-user"></span>User Management</p>
+              <p><span class="icon-chart-pie"></span>Post Analytics</p>
+              <p><span class="icon-calendar"></span>Calendar</p>
+              <p><span class="icon-comment-alt"></span>Support</p>
+              <p><span class="icon-cog"></span>Settings</p>
+              <p id="earning">Earning:<span>$5973.94</span></p>
+            </div>
+      </div>
+    </div>
+    <div class="zone3">
+      <div class="calendar-container">
+        <div class="calendar-bar">
+          <h2>Calendar</h2>
           <p>492 Tasks</p>
-          <div class="calendar__container__calendar__content__search">
-             <input placeholder="Search Tasks">
-             <span class="icon-search"></span>
-           </div>
-           <div class="calendar__container__calendar__content__selectbox">
-               <p>Status:</p>
-               <select class="calendar__container__calendar__content__selectbox__select">
-                   <option value="icon-dot">&#xe807; Running</option>
-                   <option value="icon-dot">&#xe807;Oranges</option>
-               </select>
-           </div>
-           <p></p>
+          <div class="calendar-bar__search">
+              <input placeholder="Search Tasks">
+              <span class="icon-search"></span>
           </div>
-     </div>
-     <div class="calendar__container__calendar__month">
-       <div class="calendar__container__calendar__month"></div>
-       <div></div>
-     </div>
-   </div>
+          <div class="calendar-bar__select">
+            <p>Status:</p>
+            <ul class="calendar-bar__select__options">
+              <li class="init"><span class="icon-dot">Finished</span></li>
+                <ul id="selections">
+                    <li><span class="icon-dot"></span>Running</li>
+                    <li><span class="icon-dot">Finished</span></li>
+                </ul> 
+            </ul>
+          </div>
+           <a href="#" class="calendar-bar__add"><span class="icon-plus"></span>Add</a>
+           <a href="#" class="calendar-bar__dots"><span class="icon-dot-3"></span></a>
+        </div>
+        <div class="calender-presenter">
+            <div class="calendar-days">1</div>
+            <div class="calendar-side">2</div>
+        </div>
+      </div>
+    </div>
     <script src="./js/index.js"></script>
   </body>
 </html>

@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'icons';
-  src: url('./icons.eot?84202345');
-  src: url('./icons.eot?84202345#iefix') format('embedded-opentype'),
-       url('./icons.woff2?84202345') format('woff2'),
-       url('./icons.woff?84202345') format('woff'),
-       url('./icons.ttf?84202345') format('truetype'),
-       url('./icons.svg?84202345#icons') format('svg');
+  src: url('./icons.eot?17944044');
+  src: url('./icons.eot?17944044#iefix') format('embedded-opentype'),
+       url('./icons.woff2?17944044') format('woff2'),
+       url('./icons.woff?17944044') format('woff'),
+       url('./icons.ttf?17944044') format('truetype'),
+       url('./icons.svg?17944044#icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
-/* Chrome hack: SVG is rendered more mooth in Windozze. 100% magic, uncomment if you need it. */
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'icons';
-    src: url('../font/icons.svg?84202345#icons') format('svg');
+    src: url('../font/icons.svg?17944044#icons') format('svg');
   }
 }
 */
@@ -57,14 +57,14 @@
  
 .icon-chart-pie:before { content: '\e800'; } /* '' */
 .icon-user:before { content: '\e801'; } /* '' */
-.icon-calendar-inv:before { content: '\e802'; } /* '' */
+.icon-notification:before { content: '\e802'; } /* '' */
 .icon-comment-alt:before { content: '\e803'; } /* '' */
 .icon-cog:before { content: '\e804'; } /* '' */
 .icon-dot-3:before { content: '\e805'; } /* '' */
 .icon-search:before { content: '\e806'; } /* '' */
 .icon-dot:before { content: '\e807'; } /* '' */
 .icon-plus:before { content: '\e808'; } /* '' */
-.icon-th-thumb:before { content: '\f00a'; } /* '' */
-.icon-bell-alt:before { content: '\f0f3'; } /* '' */
+.icon-calendar:before { content: '\e809'; } /* '' */
+.icon-dashboard:before { content: '\e80a'; } /* '' */
 .icon-angle-right:before { content: '\f105'; } /* '' */
 .icon-doc-text-inv:before { content: '\f15c'; } /* '' */
