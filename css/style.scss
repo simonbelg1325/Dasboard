@@ -19,7 +19,7 @@ body{
     @include layout-vertical();
     margin: 0 auto;
     max-width: 1840px;
-    height: 100vh;
+    height: 1204px;
 }
 .nav-top{
     @include layout-horizontal();
@@ -114,7 +114,8 @@ body{
 .zone3{
     margin: 0 auto;
     max-width:100%;
-    height: 100vh;
+    height: 1056px;
+    // height: 100vh;
     background-color:$calendar;
 }
 .calendar-bar{
@@ -195,20 +196,104 @@ body{
         &__options:hover  #selections{
             display: block;
         } 
-    }
-    .calendar-presenter{
+    }     
+}
+.calendar-presenter{
+  @include layout-horizontal();
+  margin-bottom: 38px;
+    &__days{
         @include layout-vertical();
-       }
-       .calendar-days{
-           @include layout-horizontal();
-           display: flex;
-           width:50%;
-           height: 893px;
-       }
-       .calendar-side{
-           @include layout-horizontal();
-           display: flex;
-           width:10%;
-           height: 893px;
-       }
+        width: 81.8%;
+        height: 893px;
+        background-color:$white;
+        border-right: 1px solid $border;
+        .calendar-header{
+            @include layout-horizontal();
+            @include layout-center();
+            margin-top: 42px;
+            margin-bottom: 44px;
+            &__month{
+                margin-left: 631px;
+                font-size: 23px;
+                font-weight: bold;
+            }
+            
+            &__days{
+                position: relative;
+                @include layout();
+                @include self-center();
+                width:141px;
+                padding: 15px 21px;
+                background-color:$light-blue;
+                margin-right: 46px;
+                border-radius: 24px;
+                margin-left: auto;
+                p{
+                    margin-right: 22px;
+                }
+                
+            }
+            #left.icon-angle-right::before{
+                transform: rotate(180deg);
+                position: absolute;
+                margin-left: auto;
+                width:8px;
+                height: 11px;
+                top:21px;
+            }
+            #right.icon-angle-right::before{
+                position: absolute;
+                width:8px;
+                height: 11px;
+                top:15px;
+                right:21px;
+            }    
+        }
+        .calendar-plan{
+            @include layout();
+            // margin: 0px 46px 44px 51px;
+            width:100%;
+            height: 740px;
+            &__timeline{
+               width:108px;
+               li{
+                   @include layout();
+                   @include layout-center();
+                   font-size: 10px;
+                   padding-right: 17px;
+                   padding-left: 51px;
+                   height: 59px;
+                   color: $grey;
+               }
+               li:first-child{
+                   margin-top: 69px;
+               }
+            }
+            &__events{
+                width: 192px;
+                border: 1px solid $border;
+            }
+            &__group{
+                @include layout();
+                @include layout-center();
+                border-bottom: 1px solid $border;
+                height: 69px;
+                padding:0 43px;
+                background-color: $calendar;
+                span{
+                    font-size: 12px;
+                }
+                i{
+                    font-size: 17px;
+                    font-weight: bold;
+                }
+            }
+        } 
+    }
+    &__side{
+        @include layout-vertical();
+        width: 18.2%;
+        height: 893px;
+        background-color: $light-grey;
+    }
 }
