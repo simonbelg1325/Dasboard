@@ -208,7 +208,7 @@ body{
         .calendar-header{
             @include layout-horizontal();
             @include layout-center();
-            margin-top: 42px;
+            margin-top: 33px;
             margin-bottom: 34px;
             &__month{
                 margin-left: 631px;
@@ -373,5 +373,60 @@ body{
         @include layout-vertical();
         width: 18.2%;
         background-color: $light-grey;
+        padding: 43px 13px;
+        table{
+            margin-top: 20px;
+            height: 309px;
+            border-bottom: 1px solid $border;
+        }
+        &__null{
+            color: $grey;
+        }
+        &__weeks th,tr{
+            text-align: center;
+            vertical-align: middle;
+            color: $grey;
+            font-size: 10px; 
+        }
+        table thead th{
+            width: 2em;
+            height:39px;
+        }
+        
+        table tbody td{
+            height: 2.7em;
+        }
+        
+        td a{
+            text-decoration: none;
+            font-size: 12px;
+        }
+        
+        tbody a{
+            height: 100%;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+          
+        }
+        tr:last-child{
+            margin-bottom:49px;
+        }
+        
+        tbody a:hover{
+            background: $blue;
+            border-radius: 50%;
+            color: white;
+        }
+        .selected{
+            background: $blue;
+            border-radius: 50%;
+        }
+        
+        .selected a{
+            color: white;
+        }
     }
+    
 }
