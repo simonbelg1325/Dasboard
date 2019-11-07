@@ -86,55 +86,147 @@
                           <li><span>11 AM</span></li>
                         </ul>
                   </div>
-                  <div class="calendar-plan__events">
-                    <ul>
-                      <li class="calendar-plan__group">
-                        <div class="calendar-plan__top-info"><span><i>12</i> Saterday</span></div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="calendar-plan__events">
-                    <ul>
-                      <li class="calendar-plan__group">
-                        <div class="calendar-plan__top-info"><span><i>13</i> Sunday</span></div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="calendar-plan__events">
-                    <ul>
-                      <li class="calendar-plan__group">
-                        <div class="calendar-plan__top-info"><span><i>14</i> Monday</span></div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="calendar-plan__events">
-                    <ul>
-                      <li class="calendar-plan__group">
-                        <div class="calendar-plan__top-info"><span><i>15</i> Tuesday</span></div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="calendar-plan__events">
-                    <ul>
-                      <li class="calendar-plan__group">
-                        <div class="calendar-plan__top-info"><span><i>16</i> Wednesday</span></div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="calendar-plan__events">
-                    <ul>
-                      <li class="calendar-plan__group">
-                        <div class="calendar-plan__top-info"><span><i>17</i> Thursday</span></div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="calendar-plan__events">
-                    <ul>
-                      <li class="calendar-plan__group">
-                        <div class="calendar-plan__top-info"><span><i>18</i> Friday</span></div>
-                      </li>
-                    </ul>
-                  </div> 
+                  <table class="calendar-plan__event-container">
+                    <tr>
+                      <th class="calendar-plan__events"><span><i>12</i> Saterday</span></th>
+                      <th class="calendar-plan__events"><span><i>13</i> Sunday</span></th>
+                      <th class="calendar-plan__events"><span><i>14</i> Monday</span></th>
+                      <th class="calendar-plan__events"><span><i>15</i> Tuesday</span></th>
+                      <th class="calendar-plan__events"><span><i>16</i> Wednesday</span></th>
+                      <th class="calendar-plan__events"><span><i>17</i> Thursday</span></th>
+                      <th class="calendar-plan__events"><span><i>18</i> Friday</span></th>
+                    </tr>
+                    <tr aria-label="01AM">
+                      <td class="calendar-plan__event"></td>
+                      <td class="calendar-plan__event"></td>
+                      <td class="calendar-plan__event"></td>
+                      <td class="calendar-plan__event"></td>
+                      <td class="calendar-plan__event"></td>
+                      <td class="calendar-plan__event"></td>
+                      <td class="calendar-plan__event"></td>
+                    </tr>
+                    <tr aria-label="02AM">
+                        <td colspan="2"id="event-1"class="calendar-plan__event" aria-label="Saturday-event">
+                              <p>Business Meeting plan with clients</p>
+                              <span>02AM - 02.59AM</span>
+                              </td>
+                          </td>
+                      <td hidden class="calendar-plan__event" aria-label="Sunday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Monday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Tuesday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Wednesday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Thursday-event"></td>
+                      <td id="event-10" class="calendar-plan__event" aria-label="Friday-event">
+                          <p>People gather live..</p>
+                          <span>02AM - 02.59AM</span>
+                      </td>
+                    </tr>
+                    <tr aria-label="03AM">
+                      <td class="calendar-plan__event" aria-label="Saturday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Sunday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Monday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Tuesday-event"></td>
+                      <td id="event-7" class="calendar-plan__event" aria-label="Wednesday-event">
+                          <p>Gaming gear buy</p>
+                          <span>03AM - 03.59AM</span>
+                      </td>
+                      <td class="calendar-plan__event" aria-label="Thursday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Friday-event"></td>
+                    </tr>
+                    <tr aria-label="04AM">
+                      <td class="calendar-plan__event" aria-label="Saturday-event"></td>
+                      <td id="event-3" class="calendar-plan__event" aria-label="Sunday-event">
+                          <p>Team communica..</p>
+                          <span>04AM - 04.59AM</span>
+                      </td>
+                      <td class="calendar-plan__event" aria-label="Monday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Tuesday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Wednesday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Thursday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Friday-event"></td>
+                    </tr>
+                    <tr aria-label="05AM">
+                      <td class="calendar-plan__event" aria-label="Saturday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Sunday-event"></td>
+                      <td colspan="2" rowspan="2" id="event-5" class="calendar-plan__event" aria-label="Monday-event">
+                          <p>Partnership agreement with developers management team</p>
+                          <span>02AM - 02.59AM</span>
+                      </td>
+                      <td hidden class="calendar-plan__event" aria-label="Tuesday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Wednesday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Thursday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Friday-event"></td>
+                    </tr>
+                    <tr aria-label="06AM">
+                      <td class="calendar-plan__event" aria-label="Saturday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Sunday-event"></td>
+                      <td hidden class="calendar-plan__event" aria-label="Monday-event"></td>
+                      <td hidden class="calendar-plan__event" aria-label="Tuesday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Wednesday-event"></td>
+                      <td colspan="2" id="event-9" class="calendar-plan__event" aria-label="Thursday-event">
+                          <p>Presentation with microsoft workout plan</p>
+                          <span>06AM - 06.59AM</span>
+                      </td>
+                      <td hidden class="calendar-plan__event" aria-label="Friday-event"></td>
+                    </tr>
+                    <tr aria-label="07AM">
+                      <td id="event-2"class="calendar-plan__event" aria-label="Saturday-event">
+                          <p>Assignment tasks..</p>
+                          <span>07AM - 07.59AM</span>
+                      </td>
+                      <td class="calendar-plan__event" aria-label="Sunday-event"></td>
+                      <td id="event-6" class="calendar-plan__event" aria-label="Monday-event">
+                          <p>Dribbble communi..</p>
+                          <span>07AM - 07.59AM</span>
+                      </td>
+                      <td class="calendar-plan__event" aria-label="Tuesday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Wednesday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Thursday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Friday-event"></td>
+                    </tr>
+                    <tr aria-label="08AM">
+                      <td class="calendar-plan__event" aria-label="Saturday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Sunday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Monday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Tuesday-event"></td>
+                      <td rowspan="2" id="event-8" class="calendar-plan__event" aria-label="Wednesday-event">
+                          <p>Team work motivate by designers</p>
+                          <span>08AM - 09.59AM</span>
+                      </td>
+                      <td class="calendar-plan__event" aria-label="Thursday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Friday-event"></td>
+                    </tr>
+                    <tr aria-label="09AM">
+                      <td class="calendar-plan__event" aria-label="Saturday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Sunday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Monday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Tuesday-event"></td>
+                      <td hidden class="calendar-plan__event" aria-label="Wednesday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Thursday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Friday-event"></td>
+                    </tr>
+                    <tr aria-label="10AM">
+                      <td class="calendar-plan__event" aria-label="Saturday-event"></td>
+                      <td id="event-4" class="calendar-plan__event" aria-label="Sunday-event">
+                          <p>Football team match</p>
+                          <span>10AM - 10.59AM</span>
+                      </td>
+                      <td class="calendar-plan__event" aria-label="Monday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Tuesday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Wednesday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Thursday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Friday-event"></td>
+                    </tr>
+                    <tr aria-label="11AM">
+                      <td class="calendar-plan__event" aria-label="Saturday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Sunday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Monday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Tuesday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Wednesday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Thursday-event"></td>
+                      <td class="calendar-plan__event" aria-label="Friday-event"></td>
+                    </tr>
+                  </table>
               </div>
          
             </div>

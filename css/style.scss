@@ -114,8 +114,6 @@ body{
 .zone3{
     margin: 0 auto;
     max-width:100%;
-    height: 1056px;
-    // height: 100vh;
     background-color:$calendar;
 }
 .calendar-bar{
@@ -211,7 +209,7 @@ body{
             @include layout-horizontal();
             @include layout-center();
             margin-top: 42px;
-            margin-bottom: 44px;
+            margin-bottom: 34px;
             &__month{
                 margin-left: 631px;
                 font-size: 23px;
@@ -251,9 +249,7 @@ body{
         }
         .calendar-plan{
             @include layout();
-            // margin: 0px 46px 44px 51px;
             width:100%;
-            height: 740px;
             &__timeline{
                width:108px;
                li{
@@ -262,24 +258,23 @@ body{
                    font-size: 10px;
                    padding-right: 17px;
                    padding-left: 51px;
-                   height: 59px;
+                   height: 61px;
                    color: $grey;
                }
                li:first-child{
                    margin-top: 69px;
                }
             }
+            &__event-container{
+                display: flex;
+                width:89.8%
+            }
             &__events{
                 width: 192px;
+                height:69px;
                 border: 1px solid $border;
-            }
-            &__group{
-                @include layout();
-                @include layout-center();
-                border-bottom: 1px solid $border;
-                height: 69px;
-                padding:0 43px;
                 background-color: $calendar;
+                vertical-align: middle;
                 span{
                     font-size: 12px;
                 }
@@ -288,12 +283,95 @@ body{
                     font-weight: bold;
                 }
             }
+            &__event{
+                border:1px solid $border;
+                max-height: 61px;
+                height: 61px;
+                p{
+                    color:$white;
+                }
+                span{
+                    font-size:12px;
+                }
+               
+            }
+            #event-1{
+                @include event-layout();
+                background-color: $light-purple; 
+                span{
+                    color: #e9cfff;
+                }       
+            }
+            #event-2{
+                @include event-layout();
+                background-color: $dark-grey;
+                span{
+                    color:#bec4c9;
+                }
+            }
+            #event-3{
+                @include event-layout();
+                background-color: $light-pink;
+                span{
+                    color: #ffd4e3;
+                }
+            }
+            #event-4{
+                @include event-layout();
+                background-color: $light-orange;
+                span{
+                    color: #ffe8c6;
+                }
+            }
+            #event-5{
+                @include event-layout();
+                vertical-align: top;
+                background-color: $fluo-green;
+                span{
+                    color: #c1f3e5;
+                }
+            }
+            #event-6{
+                @include event-layout();
+                background-color: $water-blue;
+                span{
+                    color: #d2e6ff;
+                }
+            }
+            #event-7{
+                @include event-layout();
+                background-color: $light-orange;
+                span{
+                    color: #ffe8c6;
+                }
+            }
+            #event-8{
+                @include event-layout();
+                background-color: $light-purple;    
+                span{
+                    color: #e9cfff;
+                }    
+            }
+            #event-9{
+                @include event-layout();
+                background-color: $coral-green;  
+                span{
+                    color: #bde4e8;
+                }      
+            }
+            #event-10{
+                @include event-layout();
+                background-color: $fluo-blue;
+                span{
+                    color: #c2e6f6;
+                }        
+            }
+
         } 
     }
     &__side{
         @include layout-vertical();
         width: 18.2%;
-        height: 893px;
         background-color: $light-grey;
     }
 }
