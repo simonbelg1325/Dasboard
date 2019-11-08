@@ -178,3 +178,44 @@ min-height: 0;
   color: transparent $white;
   font-size: 12px;
 }
+@mixin today-event {
+  margin-bottom: 34px;
+  p{
+    margin-bottom: 10px;
+    font-size:12px;
+    font-weight: bold;
+  }
+  span{
+    font-size: 10px;
+    color:$today-event-span;
+  }
+  .icon-dot{
+    font-size:13px;
+  }
+  img{
+    @include responsive();
+    height: 31px;
+    width:31px;
+    display: inline-flex;
+    border-radius: 15px;
+    border: 1px solid $white;
+   
+  }
+  img:nth-child(3){
+   position: absolute;
+   left: 45px;
+  }
+  img:nth-child(2){
+    position: absolute;
+    left:22px;
+  }
+  &__image-holder{
+    display: flex;
+    position: relative;
+    margin-top:14px;
+    span{
+      margin-left: 50px;
+     align-self: center;
+    }
+  }
+}

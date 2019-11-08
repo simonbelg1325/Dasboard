@@ -9,6 +9,9 @@ body{
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
 }
+li{
+    list-style-type: none;
+}
 .zone1{
     margin: 0 auto;
     max-width:100%;
@@ -172,6 +175,9 @@ body{
         margin-left: 27px;
         &__options{
             position: relative;
+            .icon-dot::before{
+                color: $light-green;
+            }
         }
         #selections{
            position: absolute;
@@ -185,10 +191,15 @@ body{
            li:nth-child(1){
                margin-bottom: 25px;
            }
-           .icon-dot::before{
-               color:$light-green;
+           #run .icon-dot::before{
+               color:$running-color;
                font-size: 10;
            }
+           #finish .icon-dot::before{
+            color:$light-green;
+            font-size: 10;
+        }
+           
           display: none;
         }  
         &__options:hover  #selections{
@@ -373,59 +384,87 @@ body{
         @include layout-vertical();
         width: 18.2%;
         background-color: $light-grey;
-        padding: 43px 13px;
-        table{
-            margin-top: 20px;
-            height: 309px;
-            border-bottom: 1px solid $border;
+        padding: 33px;
+        border-left: 1px solid $border;
+        &__month-view{
+            @include layout();
+            height: 42px;
+           #left.icon-angle-right::before{
+               transform: rotate(180deg);
+           }
+        }
+        &__icons{
+            margin-left: auto;
+            color: $grey;
+            a{
+                color: $grey;
+            }
+        }
+        &__weeks{
+            .weekdays, td{
+                height: 50px;
+                vertical-align: middle;
+                text-align: center;
+                
+            }
+
+            .weekday{
+                color:$grey;
+                vertical-align: middle;
+                font-size: 12px;
+            }
+            .days a{
+                color: rgb(0, 0, 0);
+                font-size: 10px;
+                
+            }
+            .selected{
+                background: $blue;
+                border-radius: 50%;
+            }
+            
+            .selected a{
+                color: white;
+            }
+            
         }
         &__null{
-            color: $grey;
-        }
-        &__weeks th,tr{
-            text-align: center;
-            vertical-align: middle;
-            color: $grey;
-            font-size: 10px; 
-        }
-        table thead th{
-            width: 2em;
-            height:39px;
+            color:$grey;
+            font-size: 10px;
         }
         
-        table tbody td{
-            height: 2.7em;
+    }
+    &__friends{
+        height: 455px;
+        margin-top: 33px;
+        border-top: 1px solid $border;
+        .header{
+            margin-top:33px;
+            margin-bottom: 49px;
+            @include layout();
+            .icon-plus{
+                margin-left: auto;
+                color: $grey;
+                font-size: 14px;
+            }
         }
-        
-        td a{
-            text-decoration: none;
-            font-size: 12px;
+        .meeting{
+           @include today-event;
+           .icon-dot::before{
+               color:#ffb142;
+           }
         }
-        
-        tbody a{
-            height: 100%;
-            display:flex;
-            align-items: center;
-            justify-content: center;
-            color: black;
-          
+        .plan{
+            @include today-event;
+            .icon-dot::before{
+                color:#30d6a9;
+            }
         }
-        tr:last-child{
-            margin-bottom:49px;
-        }
-        
-        tbody a:hover{
-            background: $blue;
-            border-radius: 50%;
-            color: white;
-        }
-        .selected{
-            background: $blue;
-            border-radius: 50%;
-        }
-        
-        .selected a{
-            color: white;
+        .party{
+            @include today-event;
+            .icon-dot::before{
+                color:#c582ff;
+            }
         }
     }
     

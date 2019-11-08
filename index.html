@@ -52,8 +52,8 @@
             <ul class="calendar-bar__select__options">
               <li class="init"><span class="icon-dot">Finished</span></li>
                 <ul id="selections">
-                    <li><span class="icon-dot"></span>Running</li>
-                    <li><span class="icon-dot">Finished</span></li>
+                    <li id="run"><span class="icon-dot"></span>Running</li>
+                    <li id=finish><span class="icon-dot">Finished</span></li>
                 </ul> 
             </ul>
           </div>
@@ -231,78 +231,107 @@
          
             </div>
             <div class="calendar-presenter__side">
-                <table summary="a calendar">
-                  <div class="calendar-presenter__month-view">
-                    <span>November 2018</span>
-                    <a href="#" class="icon-angle-right"></a>
-                    <a href="#" class="icon-angle-right"></a>
+              <table class="calendar-presenter__side__weeks">
+                <div class="calendar-presenter__side__month-view">
+                  <span>November 2018</span>
+                  <div class="calendar-presenter__side__icons">
+                      <a id="left" href="#" class="icon-angle-right"></a>
+                      <a href="#" class="icon-angle-right"></a>
+                  </div>   
+                </div>
+                <thead>
+                  <tr class="weekdays">
+                    <th class="weekday" scope="col"><p>SU</p></th>
+                    <th class="weekday" scope="col"><p>MO</p></th>
+                    <th class="weekday" scope="col"><p>TU</p></th>
+                    <th class="weekday" scope="col"><p>WE</p></th>
+                    <th class="weekday" scope="col"><p>TH</p></th>
+                    <th class="weekday" scope="col"><p>FR</p></th>
+                    <th class="weekday" scope="col"><p>SA</p></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="days">
+                    <td class="calendar-presenter__side__null">29</td>
+                    <td class="calendar-presenter__side__null">30</td>
+                    <td><a href="#">31</a></td>
+                    <td><a href="#">01</a></td>
+                    <td><a href="#">02</a></td>
+                    <td><a href="#">03</a></td>
+                    <td><a href="#">04</a></td>
+                  </tr>          
+                  <tr class="days">
+                    <td><a href="#">05</a></td>
+                    <td><a href="#">06</a></td>
+                    <td><a href="#">07</a></td>
+                    <td><a href="#">08</a></td>
+                    <td><a href="#">09</a></td>
+                    <td><a href="#">10</a></td>
+                    <td><a href="#">11</a></td>
+                  </tr>          
+                  <tr class="days">
+                    <td><a href="#">12</a></td>
+                    <td><a href="#">13</a></td>
+                    <td><a href="#">14</a></td>
+                    <td><a href="#">15</a></td>
+                    <td><a href="#">16</a></td>
+                    <td><a href="#">17</a></td>
+                    <td><a href="#">18</a></td>
+                  </tr>  
+                  <tr class="days">
+                    <td><a href="#">19</a></td>
+                    <td><a href="#">20</a></td>
+                    <td><a href="#">21</a></td>
+                    <td><a href="#">22</a></td>
+                    <td class="selected"><a href="#">23</a></td>
+                    <td><a href="#">24</a></td>
+                    <td><a href="#">25</a></td>
+                  </tr>          
+                  <tr class="days">
+                    <td><a href="#">26</a></td>
+                    <td><a href="#">27</a></td>
+                    <td><a href="#">28</a></td>
+                    <td><a href="#">29</a></td>
+                    <td><a href="#">30</a></td>
+                    <td class="calendar-presenter__side__null">01</td>
+                    <td class="calendar-presenter__side__null">02</td>
+                  </tr>
+                  </tbody>
+              </table> 
+              <div class="calendar-presenter__friends">
+                <div class="header">
+                  <p>Today's Events</p>
+                  <a href="#" class="icon-plus"></a>
+                </div>
+                <div class="meeting">
+                  <p>UX planning meeting<span class="icon-dot"></span></p>
+                  <span id="meeting__time">08.00AM - 11.30PM</span>
+                  <div class="meeting__image-holder">
+                    <img src="./assets/images/profile image 7.jpg" alt="profile-img">
+                    <img src="./assets/images/profile image 2.jpg" alt="profile-img">
+                    <img src="./assets/images/profile image 3.jpg" alt="profile-img">
+                    <span>& 35 members</span>
                   </div>
-
-                    <thead class="calendar-presenter__side__weeks">
-                      <tr>
-                        <th scope="col">SU</th>
-                        <th scope="col">MO</th>
-                        <th scope="col">TU</th>
-                        <th scope="col">WE</th>
-                        <th scope="col">TH</th>
-                        <th scope="col">FR</th>
-                        <th scope="col">SA</th>
-                      </tr>
-                    </thead>
-              
-                    <tbody>
-                      <tr>
-                        <td class="calendar-presenter__side__null">29</td>
-                        <td class="calendar-presenter__side__null">30</td>
-                        <td><a href="#">31</a></td>
-                        <td><a href="#">01</a></td>
-                        <td><a href="#">02</a></td>
-                        <td><a href="#">03</a></td>
-                        <td><a href="#">04</a></td>
-                      </tr>
-              
-                      <tr>
-                        <td><a href="#">05</a></td>
-                        <td><a href="#">06</a></td>
-                        <td><a href="#">07</a></td>
-                        <td><a href="#">08</a></td>
-                        <td><a href="#">09</a></td>
-                        <td><a href="#">10</a></td>
-                        <td><a href="#">11</a></td>
-                      </tr>
-              
-                      <tr>
-                        <td><a href="#">12</a></td>
-                        <td><a href="#">13</a></td>
-                        <td><a href="#">14</a></td>
-                        <td><a href="#">15</a></td>
-                        <td><a href="#">16</a></td>
-                        <td><a href="#">17</a></td>
-                        <td><a href="#">18</a></td>
-                      </tr>
-              
-              
-                      <tr>
-                        <td><a href="#">19</a></td>
-                        <td><a href="#">20</a></td>
-                        <td><a href="#">21</a></td>
-                        <td><a href="#">22</a></td>
-                        <td class="selected"><a href="#">23</a></td>
-                        <td><a href="#">24</a></td>
-                        <td><a href="#">25</a></td>
-                      </tr>
-              
-                      <tr>
-                        <td><a href="#">26</a></td>
-                        <td><a href="#">27</a></td>
-                        <td><a href="#">28</a></td>
-                        <td><a href="#">29</a></td>
-                        <td><a href="#">30</a></td>
-                        <td class="calendar-presenter__side__null">01</td>
-                        <td class="calendar-presenter__side__null">02</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                </div>
+                <div class="plan">
+                  <p>Development team plan<span class="icon-dot"></span></p>
+                  <span id="plan__time">06.20AM - 10.15PM</span>
+                  <div class="plan__image-holder">
+                      <img src="./assets/images/profile image 4.jpg" alt="profile-img">
+                      <img src="./assets/images/profile image 5.jpg" alt="profile-img">
+                  </div>
+                </div>
+                <div class="party">
+                    <p>Get together party<span class="icon-dot"></span></p>
+                    <span id="party__time">10.30AM - 12.00PM</span>
+                    <div class="meeting__image-holder">
+                      <img src="./assets/images/profile image 3.jpg" alt="profile-img">
+                      <img src="./assets/images/profile image 7.jpg" alt="profile-img">
+                      <img src="./assets/images/profile image 6.jpg" alt="profile-img">
+                      <span>& 27 members</span>
+                    </div>
+                </div>
+              </div>                 
             </div>
         </div>
       </div>   
