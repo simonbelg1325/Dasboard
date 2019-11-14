@@ -50,7 +50,7 @@
 
 @mixin flex() {
   flex: 1;
-min-height: 0;
+  min-height: 0;
   min-width: 0;
 }
 
@@ -110,7 +110,7 @@ min-height: 0;
   align-items: center;
 }
 
-@mixin layout-center-center(){
+@mixin layout-center-center() {
   @include layout-center();
   @include layout-center-justified();
 }
@@ -167,11 +167,19 @@ min-height: 0;
   left: 0;
 }
 
-@mixin event-layout(){
+@mixin event-layout() {
   border-radius: 4px;
   font-size: 16px;
   padding: 13px 15px;
   vertical-align: middle;
+  z-index: 1;
+  height: 100%;
+  @include desktop {
+    font-size: 12px;
+  }
+  span {
+    font-size: 10px;
+  }
 }
 
 @mixin event-time-layout() {
@@ -180,42 +188,83 @@ min-height: 0;
 }
 @mixin today-event {
   margin-bottom: 34px;
-  p{
+  p {
     margin-bottom: 10px;
-    font-size:12px;
+    font-size: 12px;
     font-weight: bold;
   }
-  span{
+  span {
     font-size: 10px;
-    color:$today-event-span;
+    color: $today-event-span;
   }
-  .icon-dot{
-    font-size:13px;
+  .icon-dot {
+    font-size: 13px;
   }
-  img{
+  img {
     @include responsive();
     height: 31px;
-    width:31px;
+    width: 31px;
     display: inline-flex;
     border-radius: 15px;
     border: 1px solid $white;
-   
   }
-  img:nth-child(3){
-   position: absolute;
-   left: 45px;
-  }
-  img:nth-child(2){
+  img:nth-child(3) {
     position: absolute;
-    left:22px;
+    left: 45px;
   }
-  &__image-holder{
+  img:nth-child(2) {
+    position: absolute;
+    left: 22px;
+  }
+  &__image-holder {
     display: flex;
     position: relative;
-    margin-top:14px;
-    span{
+    margin-top: 14px;
+    span {
       margin-left: 50px;
-     align-self: center;
+      align-self: center;
     }
+  }
+}
+
+@mixin events($event-start, $event-end) {
+  //Get the starting hour
+  $startingHour: $event-start;
+
+  //Get the duration
+  $duration: $event-end - $event-start;
+  $duration: ceil($duration / 60); //We want minutes
+
+  //Get the multiplier for the height
+  $height: ($duration / 15) * 15; //15 pixels per 15 minutes
+
+  //Get the offset from the top, depending on the starting hour
+  $topOffset: $startingHour * 60;
+
+  height: $height + "px";
+  top: $topOffset + "px";
+
+  // $style: 'style="height: ' + $height + "px; top: " + $topOffset + 'px;"';
+}
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$desktop-width-lg: 1280px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) and (max-width:#{$desktop-width-lg - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop-lg {
+  @media (min-width: #{$desktop-width-lg}) {
+    @content;
   }
 }

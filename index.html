@@ -8,34 +8,34 @@
   </head>
   <body>
     <div class="zone1">
-        <div class="calendar-container">
-            <div class="nav-top">
-              <h3 class="nav-top__header">Dashboard</h3>
-              <div class="nav-top__search">
-                  <span class="icon-search"></span>
-                  <input placeholder="Search Here..">
-              </div>
-              <div class="nav-top__profile">
-                  <span class="icon-notification"></span>
-                  <img src="./assets/images/profile image.jpeg" alt="">
-                  <p id="name">Justin Mark</p>
-                  <span class="icon-dot-3"></span>
-              </div>
-            </div>
+      <div class="calendar-container">
+        <div class="nav-top">
+          <h3 class="nav-top__header">Dashboard</h3>
+          <div class="nav-top__search">
+            <span class="icon-search"></span>
+            <input placeholder="Search Here.." />
+          </div>
+          <div class="nav-top__profile">
+            <span class="icon-notification"></span>
+            <img src="./assets/images/profile image.jpeg" alt="" />
+            <p id="name">Justin Mark</p>
+            <span class="icon-dot-3"></span>
+          </div>
         </div>
+      </div>
     </div>
     <div class="zone2">
       <div class="calendar-container">
-          <div class="nav-bottom">
-              <p><span class="icon-dashboard"></span>Dashboard</p>
-              <p><span class="icon-doc-text-inv"></span>Ads Management</p>
-              <p><span class="icon-user"></span>User Management</p>
-              <p><span class="icon-chart-pie"></span>Post Analytics</p>
-              <p><span class="icon-calendar"></span>Calendar</p>
-              <p><span class="icon-comment-alt"></span>Support</p>
-              <p><span class="icon-cog"></span>Settings</p>
-              <p id="earning">Earning:<span>$5973.94</span></p>
-            </div>
+        <div class="nav-bottom">
+          <p><span class="icon-dashboard"></span>Dashboard</p>
+          <p><span class="icon-doc-text-inv"></span>Ads Management</p>
+          <p><span class="icon-user"></span>User Management</p>
+          <p><span class="icon-chart-pie"></span>Post Analytics</p>
+          <p><span class="icon-calendar"></span>Calendar</p>
+          <p><span class="icon-comment-alt"></span>Support</p>
+          <p><span class="icon-cog"></span>Settings</p>
+          <p id="earning">Earning:<span>$5973.94</span></p>
+        </div>
       </div>
     </div>
     <div class="zone3">
@@ -44,297 +44,333 @@
           <h2>Calendar</h2>
           <p>492 Tasks</p>
           <div class="calendar-bar__search">
-              <input placeholder="Search Tasks">
-              <span class="icon-search"></span>
+            <input placeholder="Search Tasks" />
+            <span class="icon-search"></span>
           </div>
           <div class="calendar-bar__select">
             <p>Status:</p>
             <ul class="calendar-bar__select__options">
-              <li class="init"><span class="icon-dot">Finished</span></li>
-                <ul id="selections">
-                    <li id="run"><span class="icon-dot"></span>Running</li>
-                    <li id=finish><span class="icon-dot">Finished</span></li>
-                </ul> 
+              <li id="visible">
+                <span class="icon-dot">Finished</span>
+                <ul id="hidden">
+                  <li id="run"><span class="icon-dot"></span>Running</li>
+                  <li id="finish"><span class="icon-dot">Finished</span></li>
+                </ul>
+              </li>
             </ul>
           </div>
-           <a href="#" class="calendar-bar__add"><span class="icon-plus"></span>Add</a>
-           <a href="#" class="calendar-bar__dots"><span class="icon-dot-3"></span></a>
+          <a href="#" class="calendar-bar__add"
+            ><span class="icon-plus"></span>Add</a
+          >
+          <a href="#" class="calendar-bar__dots"
+            ><span class="icon-dot-3"></span
+          ></a>
         </div>
         <div class="calendar-presenter">
-            <div class="calendar-presenter__days">
-              <div class="calendar-header">
-                  <h2 class="calendar-header__month">November 2018</h2>
-                  <div class="calendar-header__days">
-                    <p>Today</p>
-                    <span id="left" class="icon-angle-right"></span>
-                    <span id="right" class="icon-angle-right"></span>
-                  </div>
-              </div>
-              <div class="calendar-plan">
-                  <div class="calendar-plan__timeline">
-                      <ul>
-                          <li><span>01 AM</span></li>
-                          <li><span>02 AM</span></li>
-                          <li><span>03 AM</span></li>
-                          <li><span>04 AM</span></li>
-                          <li><span>05 AM</span></li>
-                          <li><span>06 AM</span></li>
-                          <li><span>07 AM</span></li>
-                          <li><span>08 AM</span></li>
-                          <li><span>09 AM</span></li>
-                          <li><span>10 AM</span></li>
-                          <li><span>11 AM</span></li>
-                        </ul>
-                  </div>
-                  <table class="calendar-plan__event-container">
-                    <tr>
-                      <th class="calendar-plan__events"><span><i>12</i> Saterday</span></th>
-                      <th class="calendar-plan__events"><span><i>13</i> Sunday</span></th>
-                      <th class="calendar-plan__events"><span><i>14</i> Monday</span></th>
-                      <th class="calendar-plan__events"><span><i>15</i> Tuesday</span></th>
-                      <th class="calendar-plan__events"><span><i>16</i> Wednesday</span></th>
-                      <th class="calendar-plan__events"><span><i>17</i> Thursday</span></th>
-                      <th class="calendar-plan__events"><span><i>18</i> Friday</span></th>
-                    </tr>
-                    <tr aria-label="01AM">
-                      <td class="calendar-plan__event"></td>
-                      <td class="calendar-plan__event"></td>
-                      <td class="calendar-plan__event"></td>
-                      <td class="calendar-plan__event"></td>
-                      <td class="calendar-plan__event"></td>
-                      <td class="calendar-plan__event"></td>
-                      <td class="calendar-plan__event"></td>
-                    </tr>
-                    <tr aria-label="02AM">
-                        <td colspan="2"id="event-1"class="calendar-plan__event" aria-label="Saturday-event">
-                              <p>Business Meeting plan with clients</p>
-                              <span>02AM - 02.59AM</span>
-                              </td>
-                          </td>
-                      <td hidden class="calendar-plan__event" aria-label="Sunday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Monday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Tuesday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Wednesday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Thursday-event"></td>
-                      <td id="event-10" class="calendar-plan__event" aria-label="Friday-event">
-                          <p>People gather live..</p>
-                          <span>02AM - 02.59AM</span>
-                      </td>
-                    </tr>
-                    <tr aria-label="03AM">
-                      <td class="calendar-plan__event" aria-label="Saturday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Sunday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Monday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Tuesday-event"></td>
-                      <td id="event-7" class="calendar-plan__event" aria-label="Wednesday-event">
-                          <p>Gaming gear buy</p>
-                          <span>03AM - 03.59AM</span>
-                      </td>
-                      <td class="calendar-plan__event" aria-label="Thursday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Friday-event"></td>
-                    </tr>
-                    <tr aria-label="04AM">
-                      <td class="calendar-plan__event" aria-label="Saturday-event"></td>
-                      <td id="event-3" class="calendar-plan__event" aria-label="Sunday-event">
-                          <p>Team communica..</p>
-                          <span>04AM - 04.59AM</span>
-                      </td>
-                      <td class="calendar-plan__event" aria-label="Monday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Tuesday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Wednesday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Thursday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Friday-event"></td>
-                    </tr>
-                    <tr aria-label="05AM">
-                      <td class="calendar-plan__event" aria-label="Saturday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Sunday-event"></td>
-                      <td colspan="2" rowspan="2" id="event-5" class="calendar-plan__event" aria-label="Monday-event">
-                          <p>Partnership agreement with developers management team</p>
-                          <span>02AM - 02.59AM</span>
-                      </td>
-                      <td hidden class="calendar-plan__event" aria-label="Tuesday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Wednesday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Thursday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Friday-event"></td>
-                    </tr>
-                    <tr aria-label="06AM">
-                      <td class="calendar-plan__event" aria-label="Saturday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Sunday-event"></td>
-                      <td hidden class="calendar-plan__event" aria-label="Monday-event"></td>
-                      <td hidden class="calendar-plan__event" aria-label="Tuesday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Wednesday-event"></td>
-                      <td colspan="2" id="event-9" class="calendar-plan__event" aria-label="Thursday-event">
-                          <p>Presentation with microsoft workout plan</p>
-                          <span>06AM - 06.59AM</span>
-                      </td>
-                      <td hidden class="calendar-plan__event" aria-label="Friday-event"></td>
-                    </tr>
-                    <tr aria-label="07AM">
-                      <td id="event-2"class="calendar-plan__event" aria-label="Saturday-event">
-                          <p>Assignment tasks..</p>
-                          <span>07AM - 07.59AM</span>
-                      </td>
-                      <td class="calendar-plan__event" aria-label="Sunday-event"></td>
-                      <td id="event-6" class="calendar-plan__event" aria-label="Monday-event">
-                          <p>Dribbble communi..</p>
-                          <span>07AM - 07.59AM</span>
-                      </td>
-                      <td class="calendar-plan__event" aria-label="Tuesday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Wednesday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Thursday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Friday-event"></td>
-                    </tr>
-                    <tr aria-label="08AM">
-                      <td class="calendar-plan__event" aria-label="Saturday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Sunday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Monday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Tuesday-event"></td>
-                      <td rowspan="2" id="event-8" class="calendar-plan__event" aria-label="Wednesday-event">
-                          <p>Team work motivate by designers</p>
-                          <span>08AM - 09.59AM</span>
-                      </td>
-                      <td class="calendar-plan__event" aria-label="Thursday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Friday-event"></td>
-                    </tr>
-                    <tr aria-label="09AM">
-                      <td class="calendar-plan__event" aria-label="Saturday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Sunday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Monday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Tuesday-event"></td>
-                      <td hidden class="calendar-plan__event" aria-label="Wednesday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Thursday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Friday-event"></td>
-                    </tr>
-                    <tr aria-label="10AM">
-                      <td class="calendar-plan__event" aria-label="Saturday-event"></td>
-                      <td id="event-4" class="calendar-plan__event" aria-label="Sunday-event">
-                          <p>Football team match</p>
-                          <span>10AM - 10.59AM</span>
-                      </td>
-                      <td class="calendar-plan__event" aria-label="Monday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Tuesday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Wednesday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Thursday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Friday-event"></td>
-                    </tr>
-                    <tr aria-label="11AM">
-                      <td class="calendar-plan__event" aria-label="Saturday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Sunday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Monday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Tuesday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Wednesday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Thursday-event"></td>
-                      <td class="calendar-plan__event" aria-label="Friday-event"></td>
-                    </tr>
-                  </table>
-              </div>
-         
+          <div class="calendar-presenter__days">
+            <div class="month-title">
+              <h4>November 2018</h4>
+              <span>
+                Today
+                <a href="#" id="left" class="icon-angle-right"></a>
+                <a href="#" id="right" class="icon-angle-right"></a>
+              </span>
             </div>
-            <div class="calendar-presenter__side">
-              <table class="calendar-presenter__side__weeks">
-                <div class="calendar-presenter__side__month-view">
-                  <span>November 2018</span>
-                  <div class="calendar-presenter__side__icons">
-                      <a id="left" href="#" class="icon-angle-right"></a>
-                      <a href="#" class="icon-angle-right"></a>
-                  </div>   
-                </div>
-                <thead>
-                  <tr class="weekdays">
-                    <th class="weekday" scope="col"><p>SU</p></th>
-                    <th class="weekday" scope="col"><p>MO</p></th>
-                    <th class="weekday" scope="col"><p>TU</p></th>
-                    <th class="weekday" scope="col"><p>WE</p></th>
-                    <th class="weekday" scope="col"><p>TH</p></th>
-                    <th class="weekday" scope="col"><p>FR</p></th>
-                    <th class="weekday" scope="col"><p>SA</p></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="days">
-                    <td class="calendar-presenter__side__null">29</td>
-                    <td class="calendar-presenter__side__null">30</td>
-                    <td><a href="#">31</a></td>
-                    <td><a href="#">01</a></td>
-                    <td><a href="#">02</a></td>
-                    <td><a href="#">03</a></td>
-                    <td><a href="#">04</a></td>
-                  </tr>          
-                  <tr class="days">
-                    <td><a href="#">05</a></td>
-                    <td><a href="#">06</a></td>
-                    <td><a href="#">07</a></td>
-                    <td><a href="#">08</a></td>
-                    <td><a href="#">09</a></td>
-                    <td><a href="#">10</a></td>
-                    <td><a href="#">11</a></td>
-                  </tr>          
-                  <tr class="days">
-                    <td><a href="#">12</a></td>
-                    <td><a href="#">13</a></td>
-                    <td><a href="#">14</a></td>
-                    <td><a href="#">15</a></td>
-                    <td><a href="#">16</a></td>
-                    <td><a href="#">17</a></td>
-                    <td><a href="#">18</a></td>
-                  </tr>  
-                  <tr class="days">
-                    <td><a href="#">19</a></td>
-                    <td><a href="#">20</a></td>
-                    <td><a href="#">21</a></td>
-                    <td><a href="#">22</a></td>
-                    <td class="selected"><a href="#">23</a></td>
-                    <td><a href="#">24</a></td>
-                    <td><a href="#">25</a></td>
-                  </tr>          
-                  <tr class="days">
-                    <td><a href="#">26</a></td>
-                    <td><a href="#">27</a></td>
-                    <td><a href="#">28</a></td>
-                    <td><a href="#">29</a></td>
-                    <td><a href="#">30</a></td>
-                    <td class="calendar-presenter__side__null">01</td>
-                    <td class="calendar-presenter__side__null">02</td>
-                  </tr>
-                  </tbody>
-              </table> 
-              <div class="calendar-presenter__friends">
-                <div class="header">
-                  <p>Today's Events</p>
-                  <a href="#" class="icon-plus"></a>
-                </div>
-                <div class="meeting">
-                  <p>UX planning meeting<span class="icon-dot"></span></p>
-                  <span id="meeting__time">08.00AM - 11.30PM</span>
-                  <div class="meeting__image-holder">
-                    <img src="./assets/images/profile image 7.jpg" alt="profile-img">
-                    <img src="./assets/images/profile image 2.jpg" alt="profile-img">
-                    <img src="./assets/images/profile image 3.jpg" alt="profile-img">
-                    <span>& 35 members</span>
-                  </div>
-                </div>
-                <div class="plan">
-                  <p>Development team plan<span class="icon-dot"></span></p>
-                  <span id="plan__time">06.20AM - 10.15PM</span>
-                  <div class="plan__image-holder">
-                      <img src="./assets/images/profile image 4.jpg" alt="profile-img">
-                      <img src="./assets/images/profile image 5.jpg" alt="profile-img">
-                  </div>
-                </div>
-                <div class="party">
-                    <p>Get together party<span class="icon-dot"></span></p>
-                    <span id="party__time">10.30AM - 12.00PM</span>
-                    <div class="meeting__image-holder">
-                      <img src="./assets/images/profile image 3.jpg" alt="profile-img">
-                      <img src="./assets/images/profile image 7.jpg" alt="profile-img">
-                      <img src="./assets/images/profile image 6.jpg" alt="profile-img">
-                      <span>& 27 members</span>
+            <div class="schedule-container">
+              <div class="time">
+                <div class="time__hour"><span>01AM</span></div>
+                <div class="time__hour"><span>02AM</span></div>
+                <div class="time__hour"><span>03AM</span></div>
+                <div class="time__hour"><span>04AM</span></div>
+                <div class="time__hour"><span>05AM</span></div>
+                <div class="time__hour"><span>06AM</span></div>
+                <div class="time__hour"><span>07AM</span></div>
+                <div class="time__hour"><span>08AM</span></div>
+                <div class="time__hour"><span>09AM</span></div>
+                <div class="time__hour"><span>10AM</span></div>
+                <div class="time__hour"><span>11AM</span></div>
+              </div>
+              <div class="week-container">
+                <div class="week-container__the-week">
+                  <div class="week-container__day"><span>12</span>Saturday</div>
+                  <div class="week-container__timeslot" data-time="1">
+                    <div class="week-container__event-1">
+                      <p>Business Meeting plan with clients</p>
+                      <span>02AM - 02.59AM</span>
                     </div>
+                    <div class="week-container__event-2">
+                      <p>Assignment tasks..</p>
+                      <span>07AM - 07.59AM</span>
+                    </div>
+                  </div>
+                  <div class="week-container__timeslot" data-time="2"></div>
+                  <div class="week-container__timeslot" data-time="3"></div>
+                  <div class="week-container__timeslot" data-time="4"></div>
+                  <div class="week-container__timeslot" data-time="5"></div>
+                  <div class="week-container__timeslot" data-time="6"></div>
+                  <div class="week-container__timeslot" data-time="7"></div>
+                  <div class="week-container__timeslot" data-time="8"></div>
+                  <div class="week-container__timeslot" data-time="9"></div>
+                  <div class="week-container__timeslot" data-time="10"></div>
+                  <div class="week-container__timeslot" data-time="11"></div>
                 </div>
-              </div>                 
+                <div class="week-container__the-week">
+                  <div class="week-container__day"><span>13</span>Sunday</div>
+                  <div class="week-container__timeslot" data-time="1">
+                    <div class="week-container__event-3">
+                      <p>Team communica..</p>
+                      <span>04AM - 04.59AM</span>
+                    </div>
+                    <div class="week-container__event-4">
+                      <p>Football team match</p>
+                      <span>10AM - 10.59AM</span>
+                    </div>
+                  </div>
+                  <div class="week-container__timeslot" data-time="2"></div>
+                  <div class="week-container__timeslot" data-time="3"></div>
+                  <div class="week-container__timeslot" data-time="4"></div>
+                  <div class="week-container__timeslot" data-time="5"></div>
+                  <div class="week-container__timeslot" data-time="6"></div>
+                  <div class="week-container__timeslot" data-time="7"></div>
+                  <div class="week-container__timeslot" data-time="8"></div>
+                  <div class="week-container__timeslot" data-time="9"></div>
+                  <div class="week-container__timeslot" data-time="10"></div>
+                  <div class="week-container__timeslot" data-time="11"></div>
+                </div>
+                <div class="week-container__the-week">
+                  <div class="week-container__day"><span>14</span>Monday</div>
+                  <div class="week-container__timeslot" data-time="1">
+                    <div class="week-container__event-5">
+                      <p>
+                        Partnership agreement with developers management team
+                      </p>
+                      <span>02AM - 02.59AM</span>
+                    </div>
+                    <div class="week-container__event-6">
+                      <p>Dribbble communi..</p>
+                      <span>07AM - 07.59AM</span>
+                    </div>
+                  </div>
+                  <div class="week-container__timeslot" data-time="2"></div>
+                  <div class="week-container__timeslot" data-time="3"></div>
+                  <div class="week-container__timeslot" data-time="4"></div>
+                  <div class="week-container__timeslot" data-time="5"></div>
+                  <div class="week-container__timeslot" data-time="6"></div>
+                  <div class="week-container__timeslot" data-time="7"></div>
+                  <div class="week-container__timeslot" data-time="8"></div>
+                  <div class="week-container__timeslot" data-time="9"></div>
+                  <div class="week-container__timeslot" data-time="10"></div>
+                  <div class="week-container__timeslot" data-time="11"></div>
+                </div>
+                <div class="week-container__the-week">
+                  <div class="week-container__day"><span>15</span>Tuesday</div>
+                  <div class="week-container__timeslot" data-time="1"></div>
+                  <div class="week-container__timeslot" data-time="2"></div>
+                  <div class="week-container__timeslot" data-time="3"></div>
+                  <div class="week-container__timeslot" data-time="4"></div>
+                  <div class="week-container__timeslot" data-time="5"></div>
+                  <div class="week-container__timeslot" data-time="6"></div>
+                  <div class="week-container__timeslot" data-time="7"></div>
+                  <div class="week-container__timeslot" data-time="8"></div>
+                  <div class="week-container__timeslot" data-time="9"></div>
+                  <div class="week-container__timeslot" data-time="10"></div>
+                  <div class="week-container__timeslot" data-time="11"></div>
+                </div>
+                <div class="week-container__the-week">
+                  <div class="week-container__day">
+                    <span>16</span>Wednesday
+                  </div>
+                  <div class="week-container__timeslot" data-time="1">
+                    <div class="week-container__event-7">
+                      <p>Gaming gear buy</p>
+                      <span>03AM - 03.59AM</span>
+                    </div>
+                    <div class="week-container__event-8">
+                      <p>Team work motivate by designers</p>
+                      <span>08AM - 09.59AM</span>
+                    </div>
+                  </div>
+                  <div class="week-container__timeslot" data-time="2"></div>
+                  <div class="week-container__timeslot" data-time="3"></div>
+                  <div class="week-container__timeslot" data-time="4"></div>
+                  <div class="week-container__timeslot" data-time="5"></div>
+                  <div class="week-container__timeslot" data-time="6"></div>
+                  <div class="week-container__timeslot" data-time="7"></div>
+                  <div class="week-container__timeslot" data-time="8"></div>
+                  <div class="week-container__timeslot" data-time="9"></div>
+                  <div class="week-container__timeslot" data-time="10"></div>
+                  <div class="week-container__timeslot" data-time="11"></div>
+                </div>
+                <div class="week-container__the-week">
+                  <div class="week-container__day"><span>17</span>Thursday</div>
+                  <div class="week-container__timeslot" data-time="1">
+                    <div class="week-container__event-9">
+                      <p>Presentation with microsoft workout plan</p>
+                      <span>06AM - 06.59AM</span>
+                    </div>
+                  </div>
+                  <div class="week-container__timeslot" data-time="2"></div>
+                  <div class="week-container__timeslot" data-time="3"></div>
+                  <div class="week-container__timeslot" data-time="4"></div>
+                  <div class="week-container__timeslot" data-time="5"></div>
+                  <div class="week-container__timeslot" data-time="6"></div>
+                  <div class="week-container__timeslot" data-time="7"></div>
+                  <div class="week-container__timeslot" data-time="8"></div>
+                  <div class="week-container__timeslot" data-time="9"></div>
+                  <div class="week-container__timeslot" data-time="10"></div>
+                  <div class="week-container__timeslot" data-time="11"></div>
+                </div>
+                <div class="week-container__the-week">
+                  <div class="week-container__day"><span>18</span>Friday</div>
+                  <div class="week-container__timeslot" data-time="1">
+                    <div class="week-container__event-10">
+                      <p>People gather live..</p>
+                      <span>02AM - 02.59AM</span>
+                    </div>
+                  </div>
+                  <div class="week-container__timeslot" data-time="2"></div>
+                  <div class="week-container__timeslot" data-time="3"></div>
+                  <div class="week-container__timeslot" data-time="4"></div>
+                  <div class="week-container__timeslot" data-time="5"></div>
+                  <div class="week-container__timeslot" data-time="6"></div>
+                  <div class="week-container__timeslot" data-time="7"></div>
+                  <div class="week-container__timeslot" data-time="8"></div>
+                  <div class="week-container__timeslot" data-time="9"></div>
+                  <div class="week-container__timeslot" data-time="10"></div>
+                  <div class="week-container__timeslot" data-time="11"></div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="calendar-presenter__side">
+            <table class="calendar-presenter__side__weeks">
+              <div class="calendar-presenter__side__month-view">
+                <span>November 2018</span>
+                <div class="calendar-presenter__side__icons">
+                  <a id="left" href="#" class="icon-angle-right"></a>
+                  <a href="#" class="icon-angle-right"></a>
+                </div>
+              </div>
+              <thead>
+                <tr class="weekdays">
+                  <th class="weekday" scope="col"><p>SU</p></th>
+                  <th class="weekday" scope="col"><p>MO</p></th>
+                  <th class="weekday" scope="col"><p>TU</p></th>
+                  <th class="weekday" scope="col"><p>WE</p></th>
+                  <th class="weekday" scope="col"><p>TH</p></th>
+                  <th class="weekday" scope="col"><p>FR</p></th>
+                  <th class="weekday" scope="col"><p>SA</p></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="days">
+                  <td class="calendar-presenter__side__null">29</td>
+                  <td class="calendar-presenter__side__null">30</td>
+                  <td><a href="#">31</a></td>
+                  <td><a href="#">01</a></td>
+                  <td><a href="#">02</a></td>
+                  <td><a href="#">03</a></td>
+                  <td><a href="#">04</a></td>
+                </tr>
+                <tr class="days">
+                  <td><a href="#">05</a></td>
+                  <td id="highlight-left"><a href="#">06</a></td>
+                  <td id="highlight-middle"><a href="#">07</a></td>
+                  <td id="highlight-right"><a href="#">08</a></td>
+                  <td><a href="#">09</a></td>
+                  <td><a href="#">10</a></td>
+                  <td><a href="#">11</a></td>
+                </tr>
+                <tr class="days">
+                  <td><a href="#">12</a></td>
+                  <td><a href="#">13</a></td>
+                  <td><a href="#">14</a></td>
+                  <td><a href="#">15</a></td>
+                  <td><a href="#">16</a></td>
+                  <td><a href="#">17</a></td>
+                  <td><a href="#">18</a></td>
+                </tr>
+                <tr class="days">
+                  <td><a href="#">19</a></td>
+                  <td><a href="#">20</a></td>
+                  <td><a href="#">21</a></td>
+                  <td><a href="#">22</a></td>
+                  <td class="selected"><a href="#">23</a></td>
+                  <td><a href="#">24</a></td>
+                  <td><a href="#">25</a></td>
+                </tr>
+                <tr class="days">
+                  <td><a href="#">26</a></td>
+                  <td><a href="#">27</a></td>
+                  <td><a href="#">28</a></td>
+                  <td><a href="#">29</a></td>
+                  <td><a href="#">30</a></td>
+                  <td class="calendar-presenter__side__null">01</td>
+                  <td class="calendar-presenter__side__null">02</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="calendar-presenter__friends">
+              <div class="header">
+                <p>Today's Events</p>
+                <a href="#" class="icon-plus"></a>
+              </div>
+              <div class="meeting">
+                <p>UX planning meeting<span class="icon-dot"></span></p>
+                <span id="meeting__time">08.00AM - 11.30PM</span>
+                <div class="meeting__image-holder">
+                  <img
+                    src="./assets/images/profile image 7.jpg"
+                    alt="profile-img"
+                  />
+                  <img
+                    src="./assets/images/profile image 2.jpg"
+                    alt="profile-img"
+                  />
+                  <img
+                    src="./assets/images/profile image 3.jpg"
+                    alt="profile-img"
+                  />
+                  <span>& 35 members</span>
+                </div>
+              </div>
+              <div class="plan">
+                <p>Development team plan<span class="icon-dot"></span></p>
+                <span id="plan__time">06.20AM - 10.15PM</span>
+                <div class="plan__image-holder">
+                  <img
+                    src="./assets/images/profile image 4.jpg"
+                    alt="profile-img"
+                  />
+                  <img
+                    src="./assets/images/profile image 5.jpg"
+                    alt="profile-img"
+                  />
+                </div>
+              </div>
+              <div class="party">
+                <p>Get together party<span class="icon-dot"></span></p>
+                <span id="party__time">10.30AM - 12.00PM</span>
+                <div class="meeting__image-holder">
+                  <img
+                    src="./assets/images/profile image 3.jpg"
+                    alt="profile-img"
+                  />
+                  <img
+                    src="./assets/images/profile image 7.jpg"
+                    alt="profile-img"
+                  />
+                  <img
+                    src="./assets/images/profile image 6.jpg"
+                    alt="profile-img"
+                  />
+                  <span>& 27 members</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>   
+      </div>
     </div>
     <script src="./js/index.js"></script>
   </body>
