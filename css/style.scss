@@ -54,6 +54,7 @@ body {
     @include layout-center();
     margin-left: auto;
     margin-right: 15px;
+    cursor: pointer;
     [class^="icon-"]:before {
       color: $grey;
     }
@@ -173,24 +174,20 @@ body {
   }
   &__search {
     margin-left: 27px;
-    position: relative;
+    padding: 17px 27px;
+    background-color: white;
+    border-radius: 24px;
     input {
       border: none;
-      border-radius: 24px;
-      padding: 17px 27px;
-      width: 187px;
+      width: 127px;
       margin-right: 5px;
+      text-indent: 13px;
       &::placeholder {
         color: $search;
       }
     }
     .icon-search {
-      position: absolute;
       color: $search;
-      line-height: 11px;
-      top: 17px;
-      right: 25px;
-      margin-left: 0 auto;
     }
   }
   &__select {
@@ -205,8 +202,12 @@ body {
       .icon-dot::before {
         color: $light-green;
       }
+      .icon-down-micro::before {
+        color: $grey;
+      }
     }
     #hidden {
+      border-top: 15px solid $calendar;
       position: absolute;
       width: 157px;
       height: 105px;
@@ -248,6 +249,7 @@ body {
       h4 {
         display: flex;
         flex: 1;
+        margin-left: 180px;
         justify-content: center;
         font-weight: bold;
         align-items: center;
@@ -267,7 +269,6 @@ body {
         border-radius: 24px;
         #left.icon-angle-right::before {
           transform: rotate(180deg);
-          vertical-align: middle;
           margin-right: 0;
         }
         #right.icon-angle-right::before {

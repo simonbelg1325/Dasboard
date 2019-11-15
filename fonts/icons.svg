@@ -28,6 +28,8 @@
 
 <glyph glyph-name="dashboard" unicode="&#xe80a;" d="M764 780h-334v-376h334v376z m-728 0v-228h334v228h-334z m334-284h-334v-376h334v376z m394-148h-334v-228h334v228z" horiz-adv-x="800" />
 
+<glyph glyph-name="down-micro" unicode="&#xe80b;" d="M235 231l-235 236h471z" horiz-adv-x="471" />
+
 <glyph glyph-name="angle-right" unicode="&#xf105;" d="M332 314q0-7-5-12l-261-261q-5-5-12-5t-13 5l-28 28q-6 6-6 13t6 13l219 219-219 220q-6 5-6 12t6 13l28 28q5 6 13 6t12-6l261-260q5-5 5-13z" horiz-adv-x="357.1" />
 
 <glyph glyph-name="doc-text-inv" unicode="&#xf15c;" d="M819 584q8-7 16-20h-264v264q13-8 21-16z m-265-91h303v-589q0-23-15-38t-38-16h-750q-23 0-38 16t-16 38v892q0 23 16 38t38 16h446v-304q0-22 16-37t38-16z m89-411v36q0 8-5 13t-13 5h-393q-8 0-13-5t-5-13v-36q0-8 5-13t13-5h393q8 0 13 5t5 13z m0 143v36q0 8-5 13t-13 5h-393q-8 0-13-5t-5-13v-36q0-8 5-13t13-5h393q8 0 13 5t5 13z m0 143v36q0 7-5 12t-13 5h-393q-8 0-13-5t-5-12v-36q0-8 5-13t13-5h393q8 0 13 5t5 13z" horiz-adv-x="857.1" />
