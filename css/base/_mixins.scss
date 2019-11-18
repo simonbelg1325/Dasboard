@@ -192,14 +192,22 @@
     margin-bottom: 10px;
     font-size: 12px;
     font-weight: bold;
+    span {
+      position: relative;
+    }
+    .icon-dot::before {
+      position: absolute;
+      font-size: 3.8em;
+      width: 12px;
+      height: 12px;
+      top: -12px;
+    }
   }
   span {
     font-size: 10px;
     color: $today-event-span;
   }
-  .icon-dot {
-    font-size: 13px;
-  }
+
   img {
     @include responsive();
     height: 31px;
@@ -267,4 +275,11 @@ $desktop-width-lg: 1280px;
   @media (min-width: #{$desktop-width-lg}) {
     @content;
   }
+}
+
+@mixin icon-dot-size() {
+  font-size: 35px;
+  margin-left: 0px;
+  position: relative;
+  top: 10px;
 }

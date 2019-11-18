@@ -174,16 +174,17 @@ body {
   }
   &__search {
     margin-left: 27px;
-    padding: 17px 27px;
+    padding: 12px 27px;
     background-color: white;
     border-radius: 24px;
     input {
       border: none;
-      width: 127px;
+      width: 99px;
       margin-right: 5px;
-      text-indent: 13px;
       &::placeholder {
         color: $search;
+        font-weight: 200;
+        font-size: 15px;
       }
     }
     .icon-search {
@@ -199,15 +200,34 @@ body {
     &__options {
       position: relative;
       cursor: pointer;
-      .icon-dot::before {
-        color: $light-green;
-      }
+
       .icon-down-micro::before {
         color: $grey;
       }
     }
+    #visible {
+      @include layout();
+      padding-bottom: 14px;
+      p {
+        margin-left: 0px;
+        padding-left: 34px;
+      }
+      span {
+        position: relative;
+      }
+      .icon-dot::before {
+        color: $light-green;
+        font-size: 2.8em;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: -15px;
+        padding: 0px;
+        margin: 0px;
+        padding-left: 15px;
+      }
+    }
     #hidden {
-      border-top: 15px solid $calendar;
       position: absolute;
       width: 157px;
       height: 105px;
@@ -215,17 +235,18 @@ body {
       border-radius: 3px;
       padding: 28px 34px;
       right: -13px;
+      top: 28px;
       display: none;
       li:nth-child(1) {
         padding-bottom: 25px;
       }
       #run .icon-dot::before {
         color: $running-color;
-        font-size: 10;
+        left: -11px;
       }
       #finish .icon-dot::before {
         color: $light-green;
-        font-size: 10;
+        left: -11px;
       }
     }
     #visible:hover #hidden {
@@ -268,11 +289,13 @@ body {
         padding: 15px 21px;
         border-radius: 24px;
         #left.icon-angle-right::before {
-          transform: rotate(180deg);
+          transform: rotate(180deg) translateY(-1px);
           margin-right: 0;
+          color: $grey;
         }
         #right.icon-angle-right::before {
           margin-right: 0;
+          color: $grey;
         }
       }
     }
@@ -453,9 +476,11 @@ body {
     border-left: 1px solid $border;
     &__month-view {
       @include layout();
+      align-items: center;
+      margin-bottom: 20px;
       height: 42px;
       #left.icon-angle-right::before {
-        transform: rotate(180deg);
+        transform: rotate(180deg) translateY(-1px);
       }
     }
     &__icons {
@@ -466,9 +491,11 @@ body {
       }
     }
     &__weeks {
+      height: 268px;
       .weekdays,
       td {
-        height: 40px;
+        height: 38.28px;
+        width: 38.28px;
         vertical-align: middle;
         text-align: center;
       }
