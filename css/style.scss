@@ -81,9 +81,8 @@ body {
 .nav-bottom {
   @include layout-horizontal();
   @include layout-center();
-  @include desktop {
-    font-size: 12px;
-  }
+
+  white-space: nowrap;
   height: 77px;
   [class^="icon-"]::before {
     margin-right: 13px;
@@ -99,8 +98,9 @@ body {
   p {
     margin-left: 55px;
     color: $grey;
+    cursor: pointer;
     @include desktop {
-      margin-left: 30px;
+      margin-left: 12px;
     }
   }
   p:nth-child(1) {
@@ -110,7 +110,7 @@ body {
     margin-left: 50px;
     color: $blue;
     @include desktop {
-      margin-left: 25px;
+      margin-left: 10px;
     }
   }
   p:last-child {
@@ -132,18 +132,12 @@ body {
 }
 .calendar-bar {
   @include layout-horizontal();
-  @include layout-center();
-  @include desktop {
-    font-size: 13px;
-  }
+  align-items: baseline;
   margin-top: 50px;
   margin-bottom: 35px;
   h2 {
     font-size: 27px;
     margin-left: 35px;
-    @include desktop {
-      font-size: 20px;
-    }
   }
   p {
     margin-left: 18px;
@@ -237,6 +231,7 @@ body {
       right: -13px;
       top: 28px;
       display: none;
+      box-shadow: -1px 11px 23px -5px rgba(0, 0, 0, 0.23);
       li:nth-child(1) {
         padding-bottom: 25px;
       }
@@ -256,6 +251,7 @@ body {
 }
 .calendar-presenter {
   @include layout-horizontal();
+  box-shadow: -1px 0px 45px -5px rgba(0, 0, 0, 0.23);
   margin-bottom: 38px;
   &__days {
     @include layout-vertical();
@@ -275,15 +271,8 @@ body {
         font-weight: bold;
         align-items: center;
         font-size: 24px;
-        @include desktop {
-          font-size: 17px;
-          margin-left: 200px;
-        }
       }
       span {
-        @include desktop {
-          font-size: 13px;
-        }
         justify-self: flex-end;
         background-color: $light-blue;
         padding: 15px 21px;
@@ -302,9 +291,6 @@ body {
 
     .schedule-container {
       display: flex;
-      @include desktop {
-        font-size: 12px;
-      }
       .time {
         width: 64px;
         margin-top: 69px;
@@ -407,6 +393,7 @@ body {
           width: calc(100% * 2);
           top: 240px;
           height: calc(100% * 2) !important;
+
           @include event-layout();
           vertical-align: top;
           background-color: $fluo-green;
@@ -427,7 +414,8 @@ body {
         &__event-7 {
           position: absolute;
           width: 100%;
-          top: 120px;
+          top: 75px;
+          height: calc((100% * 3) - 30px) !important;
           @include event-layout();
           background-color: $light-orange;
           span {

@@ -174,11 +174,18 @@
   vertical-align: middle;
   z-index: 1;
   height: 100%;
-  @include desktop {
-    font-size: 12px;
-  }
+  font-size: 15px;
   span {
     font-size: 10px;
+  }
+  p {
+    @include desktop {
+      @include multiLineEllipsis(
+        $lineHeight: 1.2em,
+        $lineCount: 1,
+        $bgColor: none
+      );
+    }
   }
 }
 
@@ -282,4 +289,30 @@ $desktop-width-lg: 1280px;
   margin-left: 0px;
   position: relative;
   top: 10px;
+}
+
+/* mixin for multiline */
+@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: white) {
+  overflow: hidden;
+  position: relative;
+  line-height: $lineHeight;
+  max-height: $lineHeight * $lineCount;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+  &:before {
+    content: "...";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: $bgColor;
+  }
 }
